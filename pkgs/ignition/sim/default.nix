@@ -116,6 +116,10 @@ stdenv.mkDerivation rec {
     ++ lib.optional withBulletEngineSupport bullet;
 
   buildInputs = [cmake];
+
+  patches = [
+    ./algo-header.patch
+  ];
   
   dontWrapQtApps = true;
   cmakeFlags = [
