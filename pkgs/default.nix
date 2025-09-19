@@ -16,13 +16,13 @@ rec {
   ignition = rec {
     cmake0 = pkgs.callPackage ./ignition/cmake/0.nix { };
     cmake2 = pkgs.callPackage ./ignition/cmake { };
-    cmake3 = pkgs.callPackage ./ignition/cmake/3.nix { protobuf = pkgs.protobuf_22; };
+    cmake3 = pkgs.callPackage ./ignition/cmake/3.nix { protobuf = pkgs.protobuf_24; };
     cmake4 = pkgs.callPackage ./ignition/cmake/4.nix { };
     cmake = cmake4;
 
     common3 = pkgs.callPackage ./ignition/common/3.nix { };
     common4 = pkgs.callPackage ./ignition/common/4.nix { };
-    common5 = pkgs.callPackage ./ignition/common/5.nix { protobuf = pkgs.protobuf_22; };
+    common5 = pkgs.callPackage ./ignition/common/5.nix { protobuf = pkgs.protobuf_24; };
     common6 = pkgs.callPackage ./ignition/common/6.nix { };
     common = common6;
 
@@ -34,59 +34,59 @@ rec {
 
     math4 = pkgs.callPackage ./ignition/math/4.nix { };
     math6 = pkgs.callPackage ./ignition/math/6.nix { };
-    math7 = pkgs.callPackage ./ignition/math/7.nix { protobuf = pkgs.protobuf_22; };
+    math7 = pkgs.callPackage ./ignition/math/7.nix { protobuf = pkgs.protobuf_24; };
     math8 = pkgs.callPackage ./ignition/math/8.nix { };
     math = math8;
 
     msgs5 = pkgs.callPackage ./ignition/msgs/5.nix { };
     msgs8 = pkgs.callPackage ./ignition/msgs/8.nix { };
-    msgs10 = pkgs.callPackage ./ignition/msgs/10.nix { protobuf = pkgs.protobuf_22; };
+    msgs10 = pkgs.callPackage ./ignition/msgs/10.nix { protobuf = pkgs.protobuf_24; };
     msgs11 = pkgs.callPackage ./ignition/msgs/11.nix { };
     msgs = msgs11;
 
     tools1 = pkgs.libsForQt5.callPackage ./ignition/tools/1.nix { };
-    tools2 = pkgs.libsForQt5.callPackage ./ignition/tools/2.nix { protobuf = pkgs.protobuf_22; };
+    tools2 = pkgs.libsForQt5.callPackage ./ignition/tools/2.nix { protobuf = pkgs.protobuf_24; };
     tools = tools2;
 
     transport8 = pkgs.callPackage ./ignition/transport/8.nix { };
     transport11 = pkgs.callPackage ./ignition/transport/11.nix { };
-    transport13 = pkgs.callPackage ./ignition/transport/13.nix { protobuf = pkgs.protobuf_22; };
+    transport13 = pkgs.callPackage ./ignition/transport/13.nix { protobuf = pkgs.protobuf_24; };
     transport14 = pkgs.callPackage ./ignition/transport/14.nix { };
     transport = transport14;
 
     utils1 = pkgs.callPackage ./ignition/utils/1.nix { };
-    utils2 = pkgs.callPackage ./ignition/utils/2.nix { protobuf = pkgs.protobuf_22; };
+    utils2 = pkgs.callPackage ./ignition/utils/2.nix { protobuf = pkgs.protobuf_24; };
     utils3 = pkgs.callPackage ./ignition/utils/3.nix { };
     utils = utils3;
 
     plugin1 = pkgs.callPackage ./ignition/plugin/1.nix { };
-    plugin2 = pkgs.callPackage ./ignition/plugin/2.nix { protobuf = pkgs.protobuf_22; };
+    plugin2 = pkgs.callPackage ./ignition/plugin/2.nix { protobuf = pkgs.protobuf_24; };
     plugin3 = pkgs.callPackage ./ignition/plugin/3.nix { };
     plugin = plugin3;
 
     physics5 = pkgs.callPackage ./ignition/physics/5.nix { };
-    physics7 = pkgs.callPackage ./ignition/physics/7.nix { protobuf = pkgs.protobuf_22; };
+    physics7 = pkgs.callPackage ./ignition/physics/7.nix { protobuf = pkgs.protobuf_24; };
     physics8 = pkgs.callPackage ./ignition/physics/8.nix { };
     physics = physics8;
 
     rendering6 = pkgs.libsForQt5.callPackage ./ignition/rendering/6.nix { };
     rendering8 = pkgs.libsForQt5.callPackage ./ignition/rendering/8.nix {
-      protobuf = pkgs.protobuf_22;
+      protobuf = pkgs.protobuf_24;
     };
     rendering9 = pkgs.libsForQt5.callPackage ./ignition/rendering/9.nix { };
     rendering = rendering9;
     gui6 = pkgs.libsForQt5.callPackage ./ignition/gui/6.nix { };
-    gui8 = pkgs.libsForQt5.callPackage ./ignition/gui/8.nix { protobuf = pkgs.protobuf_22; };
+    gui8 = pkgs.libsForQt5.callPackage ./ignition/gui/8.nix { protobuf = pkgs.protobuf_24; };
     gui9 = pkgs.libsForQt5.callPackage ./ignition/gui/9.nix { };
     gui = gui9;
     sensors6 = pkgs.libsForQt5.callPackage ./ignition/sensors/6.nix { };
-    sensors8 = pkgs.libsForQt5.callPackage ./ignition/sensors/8.nix { protobuf = pkgs.protobuf_22; };
+    sensors8 = pkgs.libsForQt5.callPackage ./ignition/sensors/8.nix { protobuf = pkgs.protobuf_24; };
     sensors9 = pkgs.libsForQt5.callPackage ./ignition/sensors/9.nix { };
     sensors = sensors9;
-    launch7 = pkgs.libsForQt5.callPackage ./ignition/launch/7.nix { protobuf = pkgs.protobuf_22; };
+    launch7 = pkgs.libsForQt5.callPackage ./ignition/launch/7.nix { protobuf = pkgs.protobuf_24; };
     launch = launch7;
     sim6 = pkgs.libsForQt5.callPackage ./ignition/sim/6.nix { };
-    sim8 = pkgs.libsForQt5.callPackage ./ignition/sim/8.nix { protobuf = pkgs.protobuf_22; };
+    sim8 = pkgs.libsForQt5.callPackage ./ignition/sim/8.nix { protobuf = pkgs.protobuf_24; };
     sim9 = pkgs.libsForQt5.callPackage ./ignition/sim/9.nix { };
     sim = sim9;
   };
